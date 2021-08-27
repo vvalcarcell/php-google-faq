@@ -108,6 +108,21 @@
     ?>
 
     <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="page-name">Privacy e termini</div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Introduzione</a></li>
+                <li><a href="">Norme sulla privacy</a></li>
+                <li><a href="">Termini di servizio</a></li>
+                <li><a href="">Tecnologie</a></li>
+                <li><a href="">Domande frequenti</a></li>
+            </ul>
+        </nav>
         <main>
 
             <?php
@@ -120,6 +135,23 @@
 
             ?>
         </main>
+
+        <footer>
+        <ul>
+            <li><a href="">Google</a></li>
+            <li><a href="">Tutto su Google</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Termini</a></li>
+        </ul>
+
+        <select name="langueges" id="languages">
+            <option value="ita">Italiano</option>
+            <option value="eng">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+        </select>
+
+        </footer>
 
     </div>
 

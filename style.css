@@ -5,13 +5,56 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-container {
+.container {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.logo {
+    width: 100px;
+    display: inline-block;
+}
+
+.page-name {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 3px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+nav ul {
+    list-style: none;
     display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+    height: 40px;
+}
+
+nav li {
+    margin-right: 40px;
+    height: 40px;
+}
+
+nav li:hover {
+    border-bottom: 4px solid rgb(0,147,206);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: bold;
+    font-size: 18px;
 }
 
 main {
     max-width: 1000px;
-    margin: 80px auto;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
 }
@@ -32,11 +75,11 @@ ol {
     list-style-position: inside;
 }
 
-li {
+ol > li {
     margin: 20px 0;
 }
 
-li::before {
+ol > li::before {
     content: "";
     width: 15px;
     display: inline-block;
@@ -44,4 +87,28 @@ li::before {
 
 .letters {
     list-style-type: lower-alpha;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.212);
+    padding-top: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer a {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#languages {
+    padding-right: 40px;
+    margin-top: 3px;
 }
