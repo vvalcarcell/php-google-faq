@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Google FAQt</title>
 </head>
@@ -12,8 +16,8 @@
     
         $FAQ= [
             [
-                "question" =>"Come state implementando la recente <a href=\"#\">decisione della Corte di giustizia dell'Unione europea</a> (CGUE) relativa al diritto all'oblio?",
-                "answer" =>"La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze 
+                "question" =>"Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+                "answer" =>"La recente <a href=\"#\">decisione della Corte di giustizia dell'Unione europea</a> ha profonde conseguenze 
                 per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere 
                 ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.
 
@@ -99,19 +103,27 @@
             ],
 
 
-        ];
-
-
-        foreach($FAQ as $item) {
-
-            echo "<div class=\"question\">{$item['question']}</div>";
-            echo "<div class=\"answer\">{$item['answer']}</div>";
-            
-
-        }
-    
+        ];  
     
     ?>
+
+    <div class="container">
+        <main>
+
+            <?php
+                foreach($FAQ as $item) {
+
+                    echo "<div class=\"question\">{$item['question']}</div>";
+                    echo "<div class=\"answer\">{$item['answer']}</div>";           
+
+                } 
+
+            ?>
+        </main>
+
+    </div>
+
+
 
 
 
